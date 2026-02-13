@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKAcademy - Formation & Services Informatiques</title>
+    <style>
+        /* Reset et style global */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #0d6efd, #083b9a);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation simple */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #083b9a;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #0d6efd;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #0d6efd;
+            animation: fadeIn 2s ease-in;
+        }
+
+        /* Liste des cours */
+        ol {
+            max-width: 500px;
+            margin: 0 auto 30px auto;
+            text-align: left;
+        }
+
+        /* Services cards */
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .service-card {
+            background: white;
+            padding: 20px;
+            width: 250px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+        }
+        .service-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Formulaire contact */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        button {
+            background-color: #0d6efd;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #083b9a;
+        }
+
+        footer {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Bouton WhatsApp */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 24px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .whatsapp:hover {
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>MKAcademy</h1>
+    <p>Formation & Services Informatiques Professionnels</p>
+</header>
+
+<nav>
+    <a href="#cours">Cours</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="cours">
+    <h2>Nos Cours</h2>
+    <ol>
+        <li>HTML & CSS pour débutants</li>
+        <li>JavaScript et développement web</li>
+        <li>Maintenance & dépannage informatique</li>
+    </ol>
+</section>
+
+<section id="services">
+    <h2>Nos Services</h2>
+    <div class="services">
+        <div class="service-card">
+            <img src="image1.jpg" alt="Maintenance">
+            <h3>Maintenance Informatique</h3>
+            <p>Réparation PC & Smartphones, support technique rapide.</p>
+        </div>
+        <div class="service-card">
+            <img src="image2.jpg" alt="Développement Web">
+            <h3>Développement Web</h3>
+            <p>Sites vitrines, e-commerce, applications web modernes.</p>
+        </div>
+        <div class="service-card">
+            <img src="image3.jpg" alt="Formation">
+            <h3>Formation Informatique</h3>
+            <p>Apprendre à coder et maîtriser les outils numériques.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contactez-nous</h2>
+    <form action="https://formspree.io/f/XXXXXXX" method="POST">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+    <p>Email direct : contact@mkacademy.com</p>
+    <p>Téléphone :243999585297</p>
+</section>
+
+<!-- Bouton WhatsApp -->
+<a href="https://wa.me/243999585297" class="whatsapp" target="_blank"> </a>
+
+<footer>
+    <p>© 2026 MKAcademy - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
